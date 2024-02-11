@@ -11,7 +11,7 @@ if (getCookie("login")){
 
 function responseFunction(result){
     console.log(result.phone);
-    if(result._id="000000000000000000000000"){
+    if(result._id==="000000000000000000000000"){
         redirect("/daftar");
     }
 }
