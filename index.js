@@ -13,6 +13,8 @@ function responseFunction(result){
     console.log(result);
     if(result._id==="000000000000000000000000"){
         redirect("/daftar");
+    }else if(!('email' in result)){
+        redirect("/daftar");
     }else if(!('bio' in result) || !('photo' in result)){
         redirect("/daftar/bio.html");
     }
