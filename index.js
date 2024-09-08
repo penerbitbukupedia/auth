@@ -3,7 +3,7 @@ import {getWithHeader} from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot
 import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.9/croot.js";
 
 if (getCookie("login")){
-    getWithHeader("https://ped.fly.dev/auth/userdata","login",getCookie("login"),responseFunction);
+    getWithHeader("https://asia-southeast2-awangga.cloudfunctions.net/bukupedia/data/user","login",getCookie("login"),responseFunction);
 }else{
     redirect("../");
 }
