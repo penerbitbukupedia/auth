@@ -13,7 +13,7 @@ function responseFunction(result){
     console.log(result);
     if(!('email' in result) || !('nik' in result) || !('pekerjaan' in result)|| !('alamatrumah' in result)|| !('alamatkantor' in result)){
         redirect("/daftar");
-    }else if(!('bio' in result) || !('profpic' in result)){
+    }else if(!('bio' in result) || !('profpic' in result) || !('urlbio' in result)){
         redirect("/daftar/bio.html");
     }
 }
