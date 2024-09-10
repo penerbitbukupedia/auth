@@ -15,5 +15,7 @@ function responseFunction(result){
         redirect("/daftar");
     }else if(!('bio' in result) || !('profpic' in result) || !('urlbio' in result)){
         redirect("/daftar/bio.html");
+    }else if(('urlbio' in result)){
+        redirect("/dashboard");
     }
 }
